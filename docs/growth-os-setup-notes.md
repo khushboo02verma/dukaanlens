@@ -14,6 +14,9 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | Search Console | Its own property `https://khushboo02verma.github.io/dukaanlens/` (owner), verified at once through the root property |
 | Leads sheet | Created "DukaanLens · Leads (Growth OS)" |
 | Weekly check | On, Mondays 09:00 |
+| Form → leads sheet | Live (a674845, written by Growth OS's website editor): every field lands in its own column, with Source/Medium/Campaign/gclid from the landing address. Tested end to end |
+| GA4 tag | Live on all 16 pages (947c4ce + 789e9c5); a test enquiry showed as generate_lead in GA4's real-time report |
+| AI cost of the website changes | $0.05 each (form, GA4) |
 
 ## Problems found, and what was done
 | # | Problem | Risk | Status |
@@ -35,6 +38,14 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | 15 | Running setup again replaced the first run's results, so the sheet script to paste was no longer shown anywhere | The person loses the one thing they must do | Not fixed |
 | 16 | The leads sheet's columns (Message, Source, Medium, Campaign) do not match the form's field names (need, utm_source, utm_campaign) | Enquiries reach the sheet with empty columns | To check when the form change runs |
 | 17 | Waiting website changes run oldest first, and the form change cannot run before the sheet script is deployed | The quick GA4 change waits behind a blocked one | Not fixed |
+| 18 | The website editor was asked to wire the form "via env LEADS_SHEET_WEBHOOK" but never given the address, and a plain HTML site has no environment variables | The form could not be wired without a person | Fixed (d0c3fed): the editor gets the web app address, the sheet's columns and the GA4 id |
+| 19 | The website pipeline's design check started only Next.js ("the site is not built in this folder") | No design check on any HTML site | Fixed (9f56a4b) |
+| 20 | **The editor tagged 16 generated pages, the site's build rewrote them, the build "passed", and the change went up for approval with the tag on no page** | A broken change approved as working | Fixed (bb7365e): the editor edits the template, and a change the build undoes stops before approval. Declined by hand this time |
+| 21 | After approval the push stopped ("unstaged changes"): the build's rewritten pages were never committed | Approved changes never go live | Fixed (62706b7): the build's pages are committed with the change |
+| 22 | A declined or failed change is marked "done", so Growth OS never tries it again | The GA4 tag had to be asked for twice more by hand | Not fixed |
+| 23 | The live check looks for text in the page HTML, so a change inside a script file shows "not live yet" for a minute | Confusing status | Not fixed |
+| 24 | The thank-you message waits for the sheet to answer (several seconds) | The visitor may think the form is stuck | Not fixed |
+| 25 | The build step added an unrelated package-lock.json to the change | Noise in the review | Not fixed |
 
 ## How setup could be easier (ideas from this run)
 - **One screen of "only you can do this" steps**, kept until done (not replaced by a re-run), each with a link, the exact clicks, and a "Check again" button.
@@ -42,9 +53,11 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 - **Ask, don't guess, for shared accounts:** when a sign-in sees several Analytics accounts, show them and let the person pick (with the ones used by other companies greyed out).
 - **Name the form fields once:** the sheet's columns should come from the site's form (or the form from the sheet), checked by a test enquiry at the end of setup.
 - **Independent changes run independently:** a blocked change (waiting for the sheet URL) should not hold up the GA4 tag.
+- **A failed or declined change goes back to the queue** with the reason, instead of being marked done.
+- **End setup with a test enquiry:** Growth OS sends one through the live form and shows it arriving in the sheet and in GA4 real time, so the owner sees the chain work.
 
 ## Steps only a person can do (for the "make setup easy" work)
 1. Sign in to Google once (done).
-2. Deploy the leads sheet's Apps Script web app once.
+2. Deploy the leads sheet's Apps Script web app once (done: about 3 minutes, including Google's "unverified app" warning, which is frightening for a non-technical owner).
 3. Create a Google Ads manager account (a test manager account for testing).
 4. Optional: create a Tag Manager account.
