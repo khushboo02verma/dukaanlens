@@ -1,0 +1,6 @@
+{
+  "name": "dukaanlens",
+  "private": true,
+  "description": "DukaanLens test site (plain HTML on GitHub Pages). npm run build writes the pages from data/pages.mjs.",
+  "scripts": { "build": "node build.mjs" }
+}
