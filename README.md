@@ -6,15 +6,15 @@ every page says so.
 
 ## Folder layout
 ```
-index.html                         home page
-contact.html                       enquiry form (sends generate_lead; posts to the leads sheet once LEADS_URL is set)
-about.html                         "a test company, on purpose"
-blog/shelf-audit-kirana-stores.html  one guide (gives Search Console something to show)
-assets/style.css, assets/site.js   styles and the form script
-growth/approved-claims.md          what the site may claim (read by Growth OS)
-robots.txt
+data/pages.mjs        every page's words (solutions, industries, guides, FAQ)
+build.mjs             `node build.mjs` writes all HTML, sitemap.xml and robots.txt from data/pages.mjs
+index.html            home                     contact.html   enquiry form (generate_lead)
+solutions/*.html      4 solution pages         about.html     "a test company, on purpose"
+industries/*.html     3 industry pages         try.html       sample shelf demo (assets/try.js, demo_read event)
+blog/*.html           4 guides + index         growth/approved-claims.md  what the site may claim
+assets/               style.css, site.js (form), try.js (demo)
 ```
-Plain HTML, no build step, so it runs on GitHub Pages as it is.
+Edit `data/pages.mjs`, run `node build.mjs`, commit both. Plain HTML out, no build on GitHub, so Pages serves it as is.
 
 ## How it fits with Growth OS
 - This folder is its **own git repository**. It is separate from `~/Desktop/GrowthOs3` (Growth OS code) and
