@@ -10,8 +10,8 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | Read the website | Profile drafted from the live site in about a minute ($0.03) |
 | GitHub (website code) | Connected and tested: "Ready: the website loop can change, build and push this site" |
 | Google sign-in | One sign-in, stored for this company only; PredCo's sign-in untouched |
-| Google Analytics 4 | Property 564831513, stream G-Q7QZZ1J18C, created in the owner's "Growth OS Test" account; generate_lead is a key event |
-| Search Console | Uses the existing `https://khushboo02verma.github.io/` property (covers /dukaanlens/) |
+| Google Analytics 4 | Property "DukaanLens" 564831513, stream G-Q7QZZ1J18C on `…/dukaanlens/`, INR, India time, in the owner's "Growth OS Test" account (data is kept per property); generate_lead is a key event |
+| Search Console | Its own property `https://khushboo02verma.github.io/dukaanlens/` (owner), verified at once through the root property |
 | Leads sheet | Created "DukaanLens · Leads (Growth OS)" |
 | Weekly check | On, Mondays 09:00 |
 
@@ -31,6 +31,17 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | 11 | Leads sheet: the form needs the sheet's Apps Script web app, which only a person can deploy | Leads cannot reach the sheet until then | Needs the owner |
 | 12 | Google Ads: no manager account under the sign-in | Ads cannot be connected | Needs the owner (a test manager account is enough for testing) |
 | 13 | The queued website requests are written for Next.js ("shared layout head", "env LEADS_SHEET_WEBHOOK") | The website loop must work them out on a plain HTML site | To watch when they run |
+| 14 | Search Console used the host's root property, which also holds the searches of every other site on that host | The company's analysis would include another site's data | Fixed (d7677a1): its own property for its folder, verified through the root |
+| 15 | Running setup again replaced the first run's results, so the sheet script to paste was no longer shown anywhere | The person loses the one thing they must do | Not fixed |
+| 16 | The leads sheet's columns (Message, Source, Medium, Campaign) do not match the form's field names (need, utm_source, utm_campaign) | Enquiries reach the sheet with empty columns | To check when the form change runs |
+| 17 | Waiting website changes run oldest first, and the form change cannot run before the sheet script is deployed | The quick GA4 change waits behind a blocked one | Not fixed |
+
+## How setup could be easier (ideas from this run)
+- **One screen of "only you can do this" steps**, kept until done (not replaced by a re-run), each with a link, the exact clicks, and a "Check again" button.
+- **Leads sheet without Apps Script:** Growth OS could receive the form itself (a small endpoint) and write to the sheet with the owner's Google sign-in, so nobody deploys a script.
+- **Ask, don't guess, for shared accounts:** when a sign-in sees several Analytics accounts, show them and let the person pick (with the ones used by other companies greyed out).
+- **Name the form fields once:** the sheet's columns should come from the site's form (or the form from the sheet), checked by a test enquiry at the end of setup.
+- **Independent changes run independently:** a blocked change (waiting for the sheet URL) should not hold up the GA4 tag.
 
 ## Steps only a person can do (for the "make setup easy" work)
 1. Sign in to Google once (done).
