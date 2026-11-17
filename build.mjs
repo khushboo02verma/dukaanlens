@@ -26,6 +26,8 @@ function page({ file, title, desc, body, type = "website", jsonld = null }) {
   <meta property="og:url" content="${canon}">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="${r}assets/style.css">${ld}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7QZZ1J18C"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-Q7QZZ1J18C');</script>
   <!-- Google Tag Manager goes here during setup -->
 </head>
 <body>

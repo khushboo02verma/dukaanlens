@@ -23,6 +23,7 @@ document.querySelectorAll("form.lead").forEach((form) => {
       gclid: params.get("gclid") || "",
     };
     window.dataLayer.push({ event: "generate_lead", form_name: form.dataset.form || "contact" });
+    if (typeof gtag === "function") gtag("event", "generate_lead", { form_name: form.dataset.form || "contact" });
     if (LEADS_URL) {
       try { await fetch(LEADS_URL, { method: "POST", mode: "no-cors", body: JSON.stringify(data) }); } catch (err) { /* the thank-you still shows */ }
     }
