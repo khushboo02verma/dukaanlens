@@ -46,6 +46,9 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | 23 | The live check looks for text in the page HTML, so a change inside a script file shows "not live yet" for a minute | Confusing status | Not fixed |
 | 24 | The thank-you message waits for the sheet to answer (several seconds) | The visitor may think the form is stuck | Not fixed |
 | 25 | The build step added an unrelated package-lock.json to the change | Noise in the review | Not fixed |
+| 26 | Growth OS's Ads settings say "Explorer" access, but Google says the Cloud project is approved for test accounts only | Setup would try live accounts and fail with a Google error | Not fixed |
+| 27 | The sign-in sees a live Ads account (8101455344) that is not DukaanLens's; setup could pick it | Ads for the wrong company | Not used; DukaanLens gets its own test manager account |
+| 28 | A Google Ads test manager account can only be made with a Google account not linked to a live manager account, from a special link (ads.google.com/nav/selectaccount?sf=mt) | Hard to find; a person may need a second Google account | Needs the owner |
 
 ## How setup could be easier (ideas from this run)
 - **One screen of "only you can do this" steps**, kept until done (not replaced by a re-run), each with a link, the exact clicks, and a "Check again" button.
