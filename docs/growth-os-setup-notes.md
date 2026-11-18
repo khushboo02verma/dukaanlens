@@ -17,6 +17,8 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | Form → leads sheet | Live (a674845, written by Growth OS's website editor): every field lands in its own column, with Source/Medium/Campaign/gclid from the landing address. Tested end to end |
 | GA4 tag | Live on all 16 pages (947c4ce + 789e9c5); a test enquiry showed as generate_lead in GA4's real-time report |
 | AI cost of the website changes | $0.05 each (form, GA4) |
+| Google Ads | Test manager "DukaanLens (test)" 963-000-5249 made by the owner; setup then created the company's own test account 376-793-3146 under it. Nothing is shown or charged. The company is locked to test Ads accounts |
+| GA4 ↔ Google Ads link | Not possible: Google does not link Analytics to Ads test accounts. Leads are counted from the sheet and GA4 meanwhile |
 
 ## Problems found, and what was done
 | # | Problem | Risk | Status |
@@ -48,7 +50,8 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 | 25 | The build step added an unrelated package-lock.json to the change | Noise in the review | Not fixed |
 | 26 | Growth OS's Ads settings say "Explorer" access, but Google says the Cloud project is approved for test accounts only | Setup would try live accounts and fail with a Google error | Not fixed |
 | 27 | The sign-in sees a live Ads account (8101455344) that is not DukaanLens's; setup could pick it | Ads for the wrong company | Not used; DukaanLens gets its own test manager account |
-| 28 | A Google Ads test manager account can only be made with a Google account not linked to a live manager account, from a special link (ads.google.com/nav/selectaccount?sf=mt) | Hard to find; a person may need a second Google account | Needs the owner |
+| 28 | A Google Ads test manager account can only be made with a Google account not linked to a live manager account, from a special link (ads.google.com/nav/selectaccount?sf=mt) | Hard to find; a person may need a second Google account | Done by the owner in about 2 minutes (it needs a reCAPTCHA, so software cannot do it) |
+| 29 | The Growth OS sign-in expired when the server restarted | The person has to sign in again mid-setup | Not fixed |
 
 ## How setup could be easier (ideas from this run)
 - **One screen of "only you can do this" steps**, kept until done (not replaced by a re-run), each with a link, the exact clicks, and a "Check again" button.
@@ -62,5 +65,5 @@ company. Growth OS fixes are on its branch `feat/html-sites`.
 ## Steps only a person can do (for the "make setup easy" work)
 1. Sign in to Google once (done).
 2. Deploy the leads sheet's Apps Script web app once (done: about 3 minutes, including Google's "unverified app" warning, which is frightening for a non-technical owner).
-3. Create a Google Ads manager account (a test manager account for testing).
+3. Create a Google Ads manager account (a test manager account for testing) (done).
 4. Optional: create a Tag Manager account.
