@@ -1,0 +1,127 @@
+{
+ "venture": "dukaanlens",
+ "startedAt": 1795011122647,
+ "finished": true,
+ "sample": false,
+ "steps": [
+  {
+   "id": "website",
+   "title": "Read the website",
+   "tool": "Website reader",
+   "why": "Find forms, tracking and anything blocking readers.",
+   "status": "done",
+   "detail": "We could read the site. 6 pages · forms on 1 · Tag Manager not found · GA4 G-Q7QZZ1J18C",
+   "at": 1795011124948
+  },
+  {
+   "id": "google",
+   "title": "Look through your Google account",
+   "tool": "Google",
+   "why": "List the Analytics, Tag Manager, Search Console and Sheets you already have, so nothing is duplicated.",
+   "status": "done",
+   "detail": "Found 3 Analytics properties, 0 Tag Manager containers, 3 Search Console sites, 14 sheets",
+   "at": 1795011126296
+  },
+  {
+   "id": "ga4",
+   "title": "Google Analytics 4",
+   "tool": "GA4",
+   "why": "Pick the property for this website, or create one with a web stream.",
+   "status": "done",
+   "detail": "Already using property 564831513",
+   "at": 1795011126296
+  },
+  {
+   "id": "keyevent",
+   "title": "Count a lead as a conversion",
+   "tool": "GA4",
+   "why": "Make generate_lead a key event, so enquiries are measured.",
+   "status": "done",
+   "detail": "Already a key event: generate_lead",
+   "at": 1795011127559
+  },
+  {
+   "id": "gtm",
+   "title": "Tag Manager",
+   "tool": "Tag Manager",
+   "why": "Pick the container on the site, or create and publish one with the GA4 tag.",
+   "status": "skipped",
+   "detail": "No Tag Manager account under this sign-in (Google doesn't let software create one). The Analytics tag goes on the site directly; Tag Manager can be added later.",
+   "at": 1795011127560
+  },
+  {
+   "id": "install",
+   "title": "Put Tag Manager on the website",
+   "tool": "Website code",
+   "why": "Through the website code if connected; otherwise you get the snippet.",
+   "status": "done",
+   "detail": "G-Q7QZZ1J18C is already on the site",
+   "at": 1795011127560
+  },
+  {
+   "id": "gsc",
+   "title": "Search Console",
+   "tool": "Search Console",
+   "why": "Pick the verified site, to read what people searched.",
+   "status": "done",
+   "detail": "Already using https://khushboo02verma.github.io/dukaanlens/",
+   "at": 1795011127561
+  },
+  {
+   "id": "sheet",
+   "title": "Leads sheet",
+   "tool": "Sheets",
+   "why": "Pick your leads sheet, or create one with the right columns.",
+   "status": "done",
+   "detail": "Already using a leads sheet",
+   "at": 1795011127561
+  },
+  {
+   "id": "form",
+   "title": "Send website enquiries to the sheet",
+   "tool": "Website code",
+   "why": "So every enquiry is scored, with its campaign and gclid.",
+   "status": "done",
+   "detail": "The existing sheet is kept as it is",
+   "at": 1795011127561
+  },
+  {
+   "id": "ads",
+   "title": "Google Ads account",
+   "tool": "Google Ads",
+   "why": "Pick the account the campaigns will run in.",
+   "status": "done",
+   "detail": "Created Google Ads account 3767933146 under test manager 9630005249 · test account: campaigns are real objects, nothing is shown or charged",
+   "at": 1795011132546,
+   "created": true
+  },
+  {
+   "id": "link",
+   "title": "Link Analytics to Google Ads",
+   "tool": "GA4 + Ads",
+   "why": "So enquiries count as Ads conversions and bids learn from them.",
+   "status": "skipped",
+   "detail": "Google doesn't link Analytics to Google Ads test accounts. This step runs on its own on the real Ads account; until then leads are counted from the leads sheet and Analytics.",
+   "at": 1795011135060
+  },
+  {
+   "id": "gamma",
+   "title": "Decks for buyer questions (Gamma)",
+   "tool": "Gamma",
+   "why": "Optional: decks that answer real buyer questions, drafted under your deck rule (Settings → Website changes).",
+   "status": "skipped",
+   "detail": "Optional. Add a Gamma key on Connect → Gamma whenever you want deck drafts",
+   "at": 1795011135060
+  },
+  {
+   "id": "schedule",
+   "title": "Turn on the weekly check",
+   "tool": "Growth OS",
+   "why": "Every Monday 9:00: score leads, block waste, read out tests.",
+   "status": "done",
+   "detail": "Already on",
+   "at": 1795011135061
+  }
+ ],
+ "endedAt": 1795011135061
+}

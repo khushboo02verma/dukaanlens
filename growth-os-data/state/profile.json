@@ -1,0 +1,88 @@
+{
+ "id": "dukaanlens",
+ "currency": "INR",
+ "accountTimezone": "Asia/Kolkata",
+ "countries": [
+  "IN"
+ ],
+ "offers": [
+  "Out-of-stock detection",
+  "Share of shelf measurement",
+  "Planogram compliance check",
+  "Price label check",
+  "Shelf-audit dashboard by store, area and distributor"
+ ],
+ "approvedClaims": [
+  "Runs on existing phones and needs no new hardware",
+  "Designed for crowded shelves and phone photos in normal store light, including small kirana stores",
+  "Accepts only in-app camera photos with time and location, requests surprise re-checks, and flags stores whose shelves look perfect while sales fall"
+ ],
+ "knownCompetitors": [
+  "Trax",
+  "Pensa Systems",
+  "Bizom",
+  "ParallelDots (ShelfWatch)",
+  "Infilect"
+ ],
+ "aiQuestions": [
+  "What is the best shelf audit software for FMCG companies in India?",
+  "How can I measure share of shelf in kirana stores using phone photos?",
+  "Which image recognition tools detect out-of-stock products in small retail stores?",
+  "How do I check planogram compliance across thousands of general trade stores?",
+  "How can I stop salesmen from staging shelves in retail audits?",
+  "What are alternatives to Trax for retail execution in India?"
+ ],
+ "budget": {
+  "dailyMax": 950,
+  "currency": "INR",
+  "gstPercent": 18
+ },
+ "targetCostPerQualifiedLead": 15000,
+ "name": "DukaanLens",
+ "website": "https://khushboo02verma.github.io/dukaanlens/",
+ "oneLiner": "A shelf-audit tool for FMCG sales teams. A salesman photographs a kirana store shelf in the app, and computer vision reports out-of-stocks, share of shelf, planogram compliance and price-label mismatches.",
+ "idealBuyer": "FMCG brands (biscuits and snacks, beverages, personal care) that sell through Indian kirana stores and have a field sales team. The site gives no company size. Buyers named: sales heads (main), trade marketing managers and category managers (share-of-shelf page).",
+ "notAFit": "Shop owners and individual retailers; students and job seekers; agencies, consultants and resellers; competitors and other shelf-audit vendors; companies with no field sales team.",
+ "dealSize": "",
+ "connectors": {
+  "ga4PropertyId": "564831513",
+  "searchConsoleSite": "https://khushboo02verma.github.io/dukaanlens/",
+  "leadsSheetId": "1-o_fW5ieyCVjPwVHvFZ6RLAe8n5Gf8FuACBonM-_EvA",
+  "leadsSheetRange": "Leads!A:M",
+  "googleAdsCustomerId": "3767933146",
+  "ga4MeasurementId": "G-Q7QZZ1J18C",
+  "leadsWebhookUrl": "https://script.google.com/macros/s/AKfycbxrVfHhIYi5SBFLlAWGxFde5afWZ-xmjogMq77rQ933a9B7h7mr3dXWSS-9VskgLTzWog/exec",
+  "googleAdsLoginCustomerId": "9630005249"
+ },
+ "policy": {
+  "codeChanges": "ask",
+  "mode": "guarded",
+  "dailyMax": 1000,
+  "monthlyMax": 30000,
+  "currency": "INR",
+  "autoChanges": {
+   "negatives": true,
+   "budgetShiftPct": 20,
+   "pause": false
+  },
+  "websiteEveryHours": 168,
+  "websiteMaxPerDay": 1,
+  "gammaDecks": "ask",
+  "gammaPerWeek": 2
+ },
+ "code": {
+  "repo": "khushboo02verma/dukaanlens",
+  "branch": "main",
+  "pushTo": "branch",
+  "pullRequests": "after-approval",
+  "localPath": "",
+  "buildCommand": "npm run build",
+  "protectedPaths": [],
+  "deploy": {
+   "mode": "auto",
+   "hookUrl": "",
+   "notes": "Test site: Growth OS opens a pull request; merging it to main publishes on GitHub Pages"
+  }
+ },
+ "adsTestOnly": true
+}

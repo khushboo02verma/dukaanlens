@@ -1,0 +1,140 @@
+{
+ "category": [
+  "Retail execution software (image recognition)",
+  "Shelf audit / shelf analytics",
+  "Perfect store audit"
+ ],
+ "triggers": [
+  {
+   "event": "Secondary sales dip in a region while salesmen report full shelves",
+   "who": "Sales head",
+   "why": "FMCG brands see mismatches between reported and actual stock regularly, often in monthly or quarterly sales reviews.",
+   "evidence": []
+  },
+  {
+   "event": "A new product launch shows poor visibility in kirana stores after launch spend",
+   "who": "Trade marketing manager",
+   "why": "Launches in biscuits, snacks and personal care happen several times a year and each one needs proof of shelf presence.",
+   "evidence": []
+  },
+  {
+   "event": "A modern-trade or general-trade retailer ignores an agreed display or planogram despite paid visibility",
+   "who": "Category manager",
+   "why": "Visibility payments are common in Indian retail, and checking compliance is hard without photos at scale.",
+   "evidence": []
+  },
+  {
+   "event": "A distributor disputes stock-out claims and nobody has store-level evidence",
+   "who": "Sales head",
+   "why": "Distributor-versus-brand blame over fill rates recurs in Indian FMCG, usually at review time.",
+   "evidence": []
+  },
+  {
+   "event": "Manual audit by agency or supervisors is too slow, costly or untrusted",
+   "who": "Sales operations / sales excellence lead",
+   "why": "Brands with large field teams review audit cost and data quality annually, typically at budget planning.",
+   "evidence": []
+  },
+  {
+   "event": "Leadership asks for a share-of-shelf number versus competitors and nobody can produce one",
+   "who": "Trade marketing manager",
+   "why": "Board and brand reviews ask for competitive shelf data regularly, and manual counts do not scale.",
+   "evidence": []
+  }
+ ],
+ "roles": [
+  {
+   "role": "Head of Sales / National Sales Manager",
+   "share": 0.35,
+   "cares": "Fixes out-of-stocks and distributor accountability, which directly affects the sales number they are measured on",
+   "why": "The site names the sales head as the main buyer, and they own the field force that would use the app.",
+   "evidence": []
+  },
+  {
+   "role": "Trade Marketing Manager",
+   "share": 0.25,
+   "cares": "Proves visibility spend delivered shelf presence and wins budget for future activations",
+   "why": "Share-of-shelf and planogram pages target this role, and trade marketing owns display compliance.",
+   "evidence": []
+  },
+  {
+   "role": "Category Manager",
+   "share": 0.15,
+   "cares": "Gets competitive shelf share data to plan assortment and negotiate with retailers",
+   "why": "The site names category managers on the share-of-shelf page, and they use competitor shelf data.",
+   "evidence": []
+  },
+  {
+   "role": "Sales Operations / Sales Excellence Lead",
+   "share": 0.15,
+   "cares": "Replaces manual audits with a trusted process and dashboards that change the daily workload",
+   "why": "They run field-force tools and reporting, and retail execution vendors are usually evaluated through them.",
+   "evidence": []
+  },
+  {
+   "role": "Head of IT / Digital",
+   "share": 0.1,
+   "cares": "Avoids security or integration problems and protects the company from a failed rollout",
+   "why": "Any app deployed to a field force and connected to DMS or SFA data needs their sign-off.",
+   "evidence": []
+  }
+ ],
+ "frame": [
+  "Salesmen report shelves are stocked in kirana stores but our biscuit sales are dipping. How do I verify what is actually on shelf?",
+  "How can a field sales team track out-of-stock products across thousands of small kirana stores in India without a big audit agency?",
+  "Our beverage brand wants to know what share of the shelf we hold versus competitors in kirana stores. How do companies measure that?",
+  "Retailers keep ignoring our display layout in small stores. Is there a way to check planogram compliance using photos from salesmen's phones?",
+  "Shops are selling our products above MRP or with wrong price tags. How can we detect price label mismatches across many stores quickly?",
+  "Can AI recognise products on a shelf photo taken by a salesman on a normal phone in a dim kirana store?",
+  "Our board wants weekly shelf data by distributor and area. What tools give store-level shelf reports for personal care brands?",
+  "Distributors claim they restock regularly but stores run out of our snacks. How do I prove it and hold them accountable with data?"
+ ],
+ "explore": [
+  "shelf audit app India",
+  "out of stock detection retail",
+  "share of shelf measurement",
+  "planogram compliance software",
+  "image recognition retail execution",
+  "kirana store shelf audit",
+  "perfect store audit FMCG",
+  "retail execution software India",
+  "shelf monitoring AI FMCG",
+  "price label compliance retail",
+  "on-shelf availability FMCG India",
+  "shelf recognition app salesman"
+ ],
+ "shortlist": [
+  "best shelf audit companies in India",
+  "image recognition retail execution vendors India",
+  "Trax vs ParallelDots ShelfWatch",
+  "Bizom vs Infilect",
+  "best planogram compliance software India",
+  "Pensa Systems alternatives",
+  "ShelfWatch alternatives",
+  "FMCG shelf analytics vendors India"
+ ],
+ "shortlistQuestions": [
+  "Which companies offer AI shelf audit for FMCG brands selling through kirana stores in India?",
+  "What are the best image recognition retail execution vendors for general trade in India?",
+  "Which shelf audit tools work well on salesman phone photos in small Indian stores, and how do they compare?",
+  "Which vendors should an FMCG sales head shortlist for out-of-stock and share-of-shelf tracking in India?"
+ ],
+ "rivalDomains": {
+  "Trax": "traxretail.com",
+  "Pensa Systems": "pensasystems.com",
+  "Bizom": "bizom.in",
+  "ParallelDots (ShelfWatch)": "paralleldots.com",
+  "Infilect": "infilect.com"
+ },
+ "evidence": [],
+ "evidenceAt": null,
+ "by": "ai",
+ "at": "2026-11-17T16:32:54.526Z",
+ "ask": {
+  "model": "sonnet",
+  "prompt": "A B2B company sells to enterprises. Work out how its buyers research on the internet before they ever contact a vendor.\n\nCompany: DukaanLens (https://khushboo02verma.github.io/dukaanlens/)\nWhat it sells: Out-of-stock detection; Share of shelf measurement; Planogram compliance check; Price label check; Shelf-audit dashboard by store, area and distributor\nIn one line: A shelf-audit tool for FMCG sales teams. A salesman photographs a kirana store shelf in the app, and computer vision reports out-of-stocks, share of shelf, planogram compliance and price-label mismatches.\nIdeal buyer: FMCG brands (biscuits and snacks, beverages, personal care) that sell through Indian kirana stores and have a field sales team. The site gives no company size. Buyers named: sales heads (main), trade marketing managers and category managers (share-of-shelf page).\nCountry: India\nKnown rivals: Trax, Pensa Systems, Bizom, ParallelDots (ShelfWatch), Infilect\n\nHow enterprise buying works now: something happens (an incident, an audit finding, a customer mandate, a board question) and a manager is told to act. They usually do not know what the solution is called. Most first describe the problem to an AI assistant in their own words. Once they have vocabulary they run a few short Google searches, read the AI Overview, watch a video. Because the ticket is large they then look for several companies to compare, and check each name before contacting anyone.\n\nWrite the searches as that buyer would, not as a marketer would. Problem words before product words. No brand names except in \"shortlist\" comparisons.\n\nFinish with one ```json block:\n{\n  \"category\": [\"2 or 3 names the buyer will learn this category is called\"],\n  \"triggers\": [{\"event\": \"what happened\", \"who\": \"role told to act\", \"why\": \"one line: which evidence shows this happens to buyers like these, and how often\"}],\n  \"roles\": [{\"role\": \"job title in the buying group\", \"share\": 0.4, \"cares\": \"what makes this person push the purchase: protects their job, wins a promotion, or changes their work\", \"why\": \"one line: which evidence puts this role in the group and gives it this say (their reports, the jobs being posted)\"}],\n  \"frame\": [\"8 questions typed to an AI assistant by someone who does not know the category yet; 10 to 25 words, plain, specific to their plant or business\"],\n  \"explore\": [\"12 short Google searches of 2 to 5 words made after they learn the vocabulary\"],\n  \"shortlist\": [\"8 Google searches made to find and compare vendors, such as best ... companies in <country>, ... vendors, A vs B\"],\n  \"shortlistQuestions\": [\"4 questions to an AI assistant asking which companies to consider\"],\n  \"rivalDomains\": {\"Rival name\": \"theirsite.com\"}\n}\n\"share\" values add up to 1. 4 to 6 triggers, 3 to 5 roles.",
+  "answer": "**How these buyers research:** An FMCG sales head sees a gap between what salesmen report and what secondary sales show. The gap might be a dip in a region, a distributor dispute, or a retailer ignoring a display agreement. They first ask an AI assistant how to check shelves without visiting every store. They learn the terms \"shelf audit\", \"share of shelf\" and \"planogram compliance\", then run short searches. Because a rollout across a field force is a large commitment, they compare vendors, mostly those with Indian kirana experience. The evidence lines below are inferred from how Indian FMCG field sales and trade marketing work, not from verified DukaanLens data.\n\n```json\n{\n  \"category\": [\"Retail execution software (image recognition)\", \"Shelf audit / shelf analytics\", \"Perfect store audit\"],\n  \"triggers\": [\n    {\"event\": \"Secondary sales dip in a region while salesmen report full shelves\", \"who\": \"Sales head\", \"why\": \"FMCG brands see mismatches between reported and actual stock regularly, often in monthly or quarterly sales reviews.\"},\n    {\"event\": \"A new product launch shows poor visibility in kirana stores after launch spend\", \"who\": \"Trade marketing manager\", \"why\": \"Launches in biscuits, snacks and personal care happen several times a year and each one needs proof of shelf presence.\"},\n    {\"event\": \"A modern-trade or general-trade retailer ignores an agreed display or planogram despite paid visibility\", \"who\": \"Category manager\", \"why\": \"Visibility payments are common in Indian retail, and checking compliance is hard without photos at scale.\"},\n    {\"event\": \"A distributor disputes stock-out claims and nobody has store-level evidence\", \"who\": \"Sales head\", \"why\": \"Distributor-versus-brand blame over fill rates recurs in Indian FMCG, usually at review time.\"},\n    {\"event\": \"Manual audit by agency or supervisors is too slow, costly or untrusted\", \"who\": \"Sales operations / sales excellence lead\", \"why\": \"Brands with large field teams review audit cost and data quality annually, typically at budget planning.\"},\n    {\"event\": \"Leadership asks for a share-of-shelf number versus competitors and nobody can produce one\", \"who\": \"Trade marketing manager\", \"why\": \"Board and brand reviews ask for competitive shelf data regularly, and manual counts do not scale.\"}\n  ],\n  \"roles\": [\n    {\"role\": \"Head of Sales / National Sales Manager\", \"share\": 0.35, \"cares\": \"Fixes out-of-stocks and distributor accountability, which directly affects the sales number they are measured on\", \"why\": \"The site names the sales head as the main buyer, and they own the field force that would use the app.\"},\n    {\"role\": \"Trade Marketing Manager\", \"share\": 0.25, \"cares\": \"Proves visibility spend delivered shelf presence and wins budget for future activations\", \"why\": \"Share-of-shelf and planogram pages target this role, and trade marketing owns display compliance.\"},\n    {\"role\": \"Category Manager\", \"share\": 0.15, \"cares\": \"Gets competitive shelf share data to plan assortment and negotiate with retailers\", \"why\": \"The site names category managers on the share-of-shelf page, and they use competitor shelf data.\"},\n    {\"role\": \"Sales Operations / Sales Excellence Lead\", \"share\": 0.15, \"cares\": \"Replaces manual audits with a trusted process and dashboards that change the daily workload\", \"why\": \"They run field-force tools and reporting, and retail execution vendors are usually evaluated through them.\"},\n    {\"role\": \"Head of IT / Digital\", \"share\": 0.10, \"cares\": \"Avoids security or integration problems and protects the company from a failed rollout\", \"why\": \"Any app deployed to a field force and connected to DMS or SFA data needs their sign-off.\"}\n  ],\n  \"frame\": [\n    \"Salesmen report shelves are stocked in kirana stores but our biscuit sales are dipping. How do I verify what is actually on shelf?\",\n    \"How can a field sales team track out-of-stock products across thousands of small kirana stores in India without a big audit agency?\",\n    \"Our beverage brand wants to know what share of the shelf we hold versus competitors in kirana stores. How do companies measure that?\",\n    \"Retailers keep ignoring our display layout in small stores. Is there a way to check planogram compliance using photos from salesmen's phones?\",\n    \"Shops are selling our products above MRP or with wrong price tags. How can we detect price label mismatches across many stores quickly?\",\n    \"Can AI recognise products on a shelf photo taken by a salesman on a normal phone in a dim kirana store?\",\n    \"Our board wants weekly shelf data by distributor and area. What tools give store-level shelf reports for personal care brands?\",\n    \"Distributors claim they restock regularly but stores run out of our snacks. How do I prove it and hold them accountable with data?\"\n  ],\n  \"explore\": [\n    \"shelf audit app India\",\n    \"out of stock detection retail\",\n    \"share of shelf measurement\",\n    \"planogram compliance software\",\n    \"image recognition retail execution\",\n    \"kirana store shelf audit\",\n    \"perfect store audit FMCG\",\n    \"retail execution software India\",\n    \"shelf monitoring AI FMCG\",\n    \"price label compliance retail\",\n    \"on-shelf availability FMCG India\",\n    \"shelf recognition app salesman\"\n  ],\n  \"shortlist\": [\n    \"best shelf audit companies in India\",\n    \"image recognition retail execution vendors India\",\n    \"Trax vs ParallelDots ShelfWatch\",\n    \"Bizom vs Infilect\",\n    \"best planogram compliance software India\",\n    \"Pensa Systems alternatives\",\n    \"ShelfWatch alternatives\",\n    \"FMCG shelf analytics vendors India\"\n  ],\n  \"shortlistQuestions\": [\n    \"Which companies offer AI shelf audit for FMCG brands selling through kirana stores in India?\",\n    \"What are the best image recognition retail execution vendors for general trade in India?\",\n    \"Which shelf audit tools work well on salesman phone photos in small Indian stores, and how do they compare?\",\n    \"Which vendors should an FMCG sales head shortlist for out-of-stock and share-of-shelf tracking in India?\"\n  ],\n  \"rivalDomains\": {\n    \"Trax\": \"traxretail.com\",\n    \"Pensa Systems\": \"pensasystems.com\",\n    \"Bizom\": \"bizom.in\",\n    \"ParallelDots (ShelfWatch)\": \"paralleldots.com\",\n    \"Infilect\": \"infilect.com\"\n  }\n}\n```",
+  "costUsd": 0.044913999999999996,
+  "cached": false
+ }
+}

@@ -1,0 +1,7 @@
+venture,source,day,at,data
+dukaanlens,crm,2026-11-17,2026-11-17T16:28:49.256Z,"{""sheets"":[]}"
+dukaanlens,crm,2026-11-18,2026-11-18T14:00:00.996Z,"{""sheets"":[{""sheet"":""enquiries"",""rows"":3,""statuses"":[{""name"":""Not worked yet"",""n"":3}]}]}"
+dukaanlens,ga4,2026-11-17,2026-11-17T16:28:47.623Z,"{""days"":28,""sessions"":0,""keyEvents"":0,""channels"":[],""pages"":[],""aiAssistants"":[]}"
+dukaanlens,ga4,2026-11-18,2026-11-18T13:59:57.976Z,"{""days"":28,""sessions"":4,""keyEvents"":1,""channels"":[{""channel"":""Direct"",""sessions"":3,""keyEvents"":0,""engaged"":0},{""channel"":""Organic Social"",""sessions"":1,""keyEvents"":1,""engaged"":1}],""pages"":[{""page"":""/dukaanlens/"",""sessions"":3,""keyEvents"":0},{""page"":""/dukaanlens/contact.html"",""sessions"":1,""keyEvents"":1}],""aiAssistants"":[]}"
+dukaanlens,gsc,2026-11-17,2026-11-17T16:28:48.813Z,"{""days"":28,""clicks"":0,""impressions"":0,""position"":0,""queries"":[],""pages"":[]}"
+dukaanlens,gsc,2026-11-18,2026-11-18T13:59:59.820Z,"{""days"":28,""clicks"":0,""impressions"":0,""position"":0,""queries"":[],""pages"":[]}"

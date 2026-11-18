@@ -1,0 +1,58 @@
+# Growth OS launch run: DukaanLens
+
+Run 2026-11-18T14-24-01_dukaanlens_launch · backend sdk · 503 s
+AI cost: $1.48 (≈ ₹140) billed to the Anthropic API key
+
+## Positioning
+DukaanLens is a shelf-photo check for FMCG sales teams selling through Indian kirana stores. The salesman takes one in-app photo and sees which listed products are missing before he leaves, so he can take the order. It is shelf photos only, with no suite to adopt. It runs on existing phones and accepts in-app camera photos only, with time and location. Every page, ad and follow-up must say it is a pilot or demo that is not yet proven: no customers, no accuracy figures, no claimed results. Market statements on the site (gaps found weeks later, wrong labels are common) are ASSUMED and must not appear in ads.
+
+## Focus offer
+Out-of-stock detection: 1) It serves the main buyer named by the registry and home page: sales heads, area sales managers and distributor managers. 2) Research found nobody targeting the narrow 'out-of-stock found before the salesman leaves' phrases (ASSUMED from a small number of searches). 3) The closest rival on this use case, Vision Group, can be compared on measured results later. 4) Its buy-intent phrases ('shelf audit app for FMCG sales team', 'retail execution software India') are less likely to draw students than 'share of shelf calculation' or 'what is planogram'. 5) Price-label check rests on a past trigger (GST 2.0, Sep 2025) whose live effect is unknown. Volumes for every phrase are unknown (ASSUMED), so this choice is a judgement to be confirmed by Keyword Planner before spend.
+
+## Blockers to fix before spend
+- TRACKING: GTM is not in the served HTML. GA4 G-Q7QZZ1J18C is present. Install GTM on every page, fire exactly one conversion, `generate_lead`, only on a successful buyer-form submit, and import it as the only primary conversion in Google Ads. Check it with a test submit before launch.
+- CONSENT: no consent banner or consent mode (MEASURED: 'consent no'). Add consent mode v2 with defaults, and a privacy policy that lists GA4, GTM and the Google Ads tag.
+- ATTRIBUTION: the form must carry gclid, utm_source/medium/campaign/term, landing page and referrer into the lead record. The lead endpoint must require a server-side secret and have a honeypot field.
+- HONESTY CONFLICT (MEASURED factConflicts): the home and solution pages say 'Book a demo' as if the service is live, while the About page says DukaanLens is not a real business. Before paid traffic, change the CTA to an honest pilot action ('Join the pilot list – tell us your shelf problem') and put a visible 'demo/pilot venture, capability not yet proven' line above the fold. Paid clicks must not be sent to a page that implies a live product.
+- QUALIFIER: add required form fields for company type (FMCG brand / distributor / retailer / agency-consultant / student / other), field sales team size (none / 1–20 / 21–100 / 100+) and role. Only an FMCG brand or distributor with a field sales team counts as qualified. Others still see a success message but are not counted as qualified.
+- KEYWORD VOLUME: no Keyword Planner data exists (ASSUMED volumes). Pull IN volumes and CPCs for the out-of-stock and retail-execution phrases. If the total exact- and phrase-match volume for the chosen list is under about 100 searches a month, do not launch. Report back instead.
+- AD LANDING PAGE: build one message-matched page for 'shelf audit app for FMCG sales team / out of stock detection'. Title of 60 characters or fewer, phrase first. Answer paragraph, form above the fold, and the 3 approved proof items only.
+- APPROVAL: 56 days × Rs 950 = Rs 53,200 including 18% GST (Rs 45,085 ex-GST). This needs human approval, stating the expected result and the assumptions below.
+
+## Measured demand
+GA4: 4 visits, 1 key events · Search Console: 0 impressions, 0 clicks, avg position 0 (last 28 days)
+
+## Website: Launch readiness 77/100 (paid traffic) · search 85/100. 8 pages checked of 16 in sitemap; 0 high, 7 medium, 2 low issues; llms.txt missing.
+
+## Tracking: GTM not in HTML; GA4 G-Q7QZZ1J18C; consent no; AI bots blocked: none.
+
+## Google and AI search (claude-seo): Score 54/100 · 4 high and 7 medium findings · Source: claude-seo 2.5.0, 2026-11-18
+- [high] /solutions/out-of-stock-detection.html: Every offer page carries a banner saying DukaanLens is a demo with no customers that sells nothing. The About page says the product is only an idea, with no results or prices. Google and AI assistants have little reason to recommend or cite a company that says this. I saw the banner on the home page and on all four solution pages I opened (this one, share of shelf, planogram compliance and price … → If the site is meant to win real search visibility, take the 'no customers, sells nothing' wording off the public offer pages. If it must stay, move it to the About page only. Then add real proof: a named pilot, a sample result with numbers, or a short method note.
+- [high] /: The 'Shelf-audit dashboard by store, area and distributor' offer has no page of its own. It is not in the sitemap or the navigation. Buyers asking for dashboards by area or distributor have nothing to land on. → Create a page at /solutions/shelf-audit-dashboard.html. Cover what the dashboard shows by store, area and distributor, who uses it, and two or three questions with answers. Link it from the home page, the navigation, the footer and the other solution pages, and add it to sitemap.xml.
+- [high] /solutions/planogram-compliance.html: Each solution page has only about 300 words and two short questions with answers. That is thin for a software buying decision. None of the pages I read answer the buyer questions in depth. These include how to check planogram compliance across thousands of general trade stores, how to stop salesmen staging shelves, and what the accuracy is. The word counts are my estimates from the page text. → Expand each offer page to 700–1,000 words. Add a worked example for a kirana store, how accuracy is measured, how staged shelves are caught, what scale it handles (thousands of stores), and 4–6 questions with direct answers. Put the question in a heading and a 40–60 word answer right under it.
+- [high] /: Several buyer questions have no page that answers them. These are 'alternatives to Trax for retail execution in India', 'stop salesmen staging shelves', and 'best shelf audit software for FMCG in India'. The only related content is the 4 guides listed in the sitemap, and I opened one of them. → Publish three pages. First, an 'Alternatives to Trax for retail execution in India' page with a fair comparison table. Second, a guide on 'How to stop staged shelves in retail audits' that explains photo checks. Third, a 'Best shelf audit software for FMCG in India' buyer's guide with clear selection criteria. Link them from the home page and the solution pages.
+
+## AI search: named in 0 of 6 (MEASURED: DukaanLens was not named in any of the six live-search answers)
+Top quoted sites: gopazo.com (Pazo), snap2insight.com, visiongroupretail.com, fieldpie.com, goodschecker.com, taqtics.co / taqtics.medium.com, fieldassist.com, beatroute.io
+
+## Competitors
+Rival websites read: 7 of 8. Google Ads tag on ParallelDots (ShelfWatch) (AW-16532713064), Infilect (AW-934140229), FieldAssist (FA IRIS) (AW-22504412), Vision Group Retail (Store360) (AW-10892588313). Also seen: LinkedIn Insight on 5, Meta (Facebook) ads pixel on 2, HubSpot on 2, 6sense on 1. No Google Ads tag found on 3 (not proof they don't advertise: tags can load after cookie consent).
+- ParallelDots (ShelfWatch): ads yes (tag AW-16532713064 on their site); Retail execution software powered by image recognition. It covers share of shelf, out-of-stock, planogram, price tag and POSM checks. It claims setup from one image per SKU and offline recognition (vendor's own pages).
+- Bizom: ads unknown; Smart Merchandising: image recognition for on-shelf availability, out-of-stock, share of shelf, planogram compliance, pricing and secondary displays. It is sold inside a 'Perfect Store' field-force suite with ERP/CRM integration and offline capture.
+- Trax: ads unknown (no ads tag found on their site); Enterprise retail execution and image recognition for shelf availability, share of shelf and promotion execution. This comes from third-party descriptions. Trax's own pages were not read.
+- Infilect: ads yes (tag AW-934140229 on their site); InfiViz: planogram, share of shelf and competitive intelligence tracking, positioned for enterprise (per a listicle).
+- Pensa Systems: ads unknown (no ads tag found on their site); Not researched. No search result mentioned it.
+- FieldAssist (FA IRIS): ads yes (tag AW-22504412 on their site); A shelf photo from a rep's phone becomes availability, planogram and promotion compliance data inside one Indian SFA, DMS and Perfect Store suite (own page).
+- Vision Group Retail (Store360): ads yes (tag AW-10892588313 on their site); The rep photographs the shelf and gets a ranked gap list on the phone within 90 seconds. It targets general trade in Asian and emerging markets and says it can go live in under 30 days (vendor's own claims).
+- Retail-Scan: ads unknown (no ads tag found on their site); Image recognition for Indian traditional trade, where merchandisers can correct mistakes while still in the store (own page).
+
+## Campaigns
+- DL-IN-Search-OOS-ShelfAudit-Test: ₹950/day, 2 ad groups
+Money: Google may spend up to 2× the daily budget on a single day; the monthly limit is 30.4 × daily. Prepaid payments include 18% GST, so pay ₹34,078 to get ₹28,880 of ads.
+Gate: rejected (Your rule: ask you before any spend) · decision rejected by Khushboo Verma
+
+## Experiments logged (4)
+- EXP-01-paid-search-OOS: FMCG sales heads and area sales managers in India search buy-intent shelf-audit and retail-execution phrases often enough that one exact/phrase Search campaign at Rs 950/day including GST produces qualified pilot-list leads at or below Rs 15,000 each. → Qualified leads, meaning generate_lead with qualifier = FMCG brand or distributor with a field sales team. (ASSUMED 0–4 qualified leads in 56 days, at most Rs 53,200 including GST. Leading-signal thresholds are in testDesign. Effect on qualified leads: it either establishes the first paid baseline, or shows there is no paid volume, which is still a logged result.), read on 2027-01-26
+- EXP-02-AEO-kirana-pages: Publishing the anti-staging and kirana share-of-shelf guides, adding llms.txt and getting directory listings will get DukaanLens named in AI answers. → namedInXofN on the same 6 questions (From 0/6 (MEASURED) to 2/6 or more. Effect on qualified leads is unknown and tracked through referrer and a 'how did you hear' field.), read on 2026-12-30
+- EXP-03-listicle-inclusion: Requesting inclusion in 2–3 ranking listicles (getextractify, gitnux, simplydepo), with honest pilot labelling, brings referred qualified leads. → Qualified leads whose first touch is a listicle or comparison referrer (ASSUMED 1–3 in 8 weeks. No spend.), read on 2027-01-13
+- EXP-04-qualifier-filter: A required company-type and field-team qualifier keeps non-fit leads (shop owners, students, agencies, vendors) out of the qualified count without lowering form completion by more than 20%. → Share of submissions qualified, and form completion rate (form submits ÷ form starts) (ASSUMED qualified share of 50% or more of submissions. Completion falls by no more than 20% against the first-week baseline.), read on 2027-01-26

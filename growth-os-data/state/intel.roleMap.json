@@ -1,0 +1,160 @@
+{
+ "at": "2026-11-18T14:28:50.430Z",
+ "stamp": "13a13ad0fbdb0280",
+ "roles": [
+  "Head of Sales / National Sales Manager",
+  "Trade Marketing Manager",
+  "Category Manager",
+  "Sales Operations / Sales Excellence Lead",
+  "Head of IT / Digital"
+ ],
+ "map": {
+  "best planogram compliance software india": [
+   "*"
+  ],
+  "best shelf audit companies in india": [
+   "*"
+  ],
+  "bizom": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "bizom app": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "do you have fmcg retail experience": [
+   "*"
+  ],
+  "dukaanlens": [
+   "*"
+  ],
+  "dukaanlens case study": [
+   "*"
+  ],
+  "dukaanlens pricing": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "dukaanlens reviews": [
+   "*"
+  ],
+  "fmcg shelf analytics vendors india": [
+   "*"
+  ],
+  "image recognition retail execution": [
+   "*"
+  ],
+  "image recognition retail execution vendors india": [
+   "*"
+  ],
+  "kirana store shelf audit": [
+   "Head of Sales / National Sales Manager",
+   "Trade Marketing Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "merchandising software planogram compliance": [
+   "Trade Marketing Manager",
+   "Category Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "on-shelf availability fmcg india": [
+   "Head of Sales / National Sales Manager",
+   "Category Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "out of stock detection retail": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "pensa systems": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "pensa systems alternatives": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "perfect store audit fmcg": [
+   "Head of Sales / National Sales Manager",
+   "Trade Marketing Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "planogram compliance software": [
+   "Trade Marketing Manager",
+   "Category Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "price label compliance retail": [
+   "Trade Marketing Manager",
+   "Category Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "retail execution software for merchandising": [
+   "Trade Marketing Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "retail execution software india": [
+   "*"
+  ],
+  "share of shelf measurement": [
+   "Trade Marketing Manager",
+   "Category Manager"
+  ],
+  "shelf audit / shelf analytics": [
+   "*"
+  ],
+  "shelf audit app india": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead"
+  ],
+  "shelf monitoring ai fmcg": [
+   "*"
+  ],
+  "shelf recognition app salesman": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "shelfwatch alternatives": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "top 10 retail execution software comparison": [
+   "*"
+  ],
+  "top 10 retail execution software features": [
+   "*"
+  ],
+  "top 10 retail execution software pricing": [
+   "*"
+  ],
+  "top 10 retail execution software providers": [
+   "*"
+  ],
+  "top 10 retail execution software reviews": [
+   "*"
+  ],
+  "trax": [
+   "Head of Sales / National Sales Manager",
+   "Sales Operations / Sales Excellence Lead",
+   "Head of IT / Digital"
+  ],
+  "trax vs paralleldots shelfwatch": [
+   "*"
+  ]
+ },
+ "tagged": 36,
+ "items": 72,
+ "costUsd": 0.021266499999999997,
+ "ask": {
+  "model": "sonnet",
+  "prompt": "DukaanLens sells: A shelf-audit tool for FMCG sales teams. A salesman photographs a kirana store shelf in the app, and computer vision reports out-of-stocks, share of shelf, planogram compliance and price-label mismatches..\nThe buying group (numbered):\nR1 | Head of Sales / National Sales Manager | cares about: Fixes out-of-stocks and distributor accountability, which directly affects the sales number they are measured on\nR2 | Trade Marketing Manager | cares about: Proves visibility spend delivered shelf presence and wins budget for future activations\nR3 | Category Manager | cares about: Gets competitive shelf share data to plan assortment and negotiate with retailers\nR4 | Sales Operations / Sales Excellence Lead | cares about: Replaces manual audits with a trusted process and dashboards that change the daily workload\nR5 | Head of IT / Digital | cares about: Avoids security or integration problems and protects the company from a failed rollout\n\nFor each search or question below, which of these roles would type or ask it while researching a purchase? Give one or more role numbers, or \"all\" when any of them would (a broad category search, a vendor comparison everyone reads).\n1 | all kirana items list\n2 | best planogram compliance software india\n3 | best retail billing software in india\n4 | best shelf audit companies in india\n5 | best software for retail garment shop in india\n6 | bizom\n7 | bizom app\n8 | book shelf width\n9 | d mart kirana price list\n10 | do you have fmcg retail experience\n11 | dukaanlens\n12 | dukaanlens case study\n13 | dukaanlens pricing\n14 | dukaanlens reviews\n15 | floating shelf dimensions\n16 | fmcg shelf analytics vendors india\n17 | force motors trax price\n18 | force trax price\n19 | how to measure a shelf\n20 | how to measure shelf dimensions\n21 | how to open kirana store\n22 | image recognition retail execution\n23 | image recognition retail execution vendors india\n24 | kirana business ideas\n25 | kirana items list\n26 | kirana items list with price\n27 | kirana list with price\n28 | kirana product list\n29 | kirana saman price list\n30 | kirana saman price list today\n31 | kirana saman rate list\n32 | kirana saman wholesale price list\n33 | kirana shop business plan\n34 | kirana shop item list\n35 | kirana store all items list\n36 | kirana store business plan\n37 | kirana store general store items list\n38 | kirana store item price list\n39 | kirana store items names list\n40 | kirana store price list\n41 | kirana store product list\n42 | kirana store shelf audit\n43 | merchandising software planogram compliance\n44 | on-shelf availability fmcg india\n45 | out of stock detection retail\n46 | pensa systems\n47 | pensa systems alternatives\n48 | perfect store audit fmcg\n49 | planogram compliance software\n50 | pos retail software india\n51 | price label compliance retail\n52 | profit margin kirana store\n53 | retail execution software for merchandising\n54 | retail execution software india\n55 | share of shelf measurement\n56 | shelf audit / shelf analytics\n57 | shelf audit app india\n58 | shelf dimensions\n59 | shelf monitoring ai fmcg\n60 | shelf recognition app salesman\n61 | shelfwatch alternatives\n62 | top 10 retail billing software in india\n63 | top 10 retail execution software comparison\n64 | top 10 retail execution software features\n65 | top 10 retail execution software pricing\n66 | top 10 retail execution software providers\n67 | top 10 retail execution software reviews\n68 | trax\n69 | trax vs paralleldots shelfwatch\n70 | traxxas x maxx price\n71 | what is a floating shelf\n72 | wholesale price list of kirana items\nReturn one ```json block: {\"map\":{\"1\":[\"R1\"],\"2\":[\"all\"],\"3\":[\"R2\",\"R4\"]}} with every number above.",
+  "answer": "```json\n{\"map\":{\"1\":[],\"2\":[\"all\"],\"3\":[],\"4\":[\"all\"],\"5\":[],\"6\":[\"R1\",\"R4\",\"R5\"],\"7\":[\"R1\",\"R4\",\"R5\"],\"8\":[],\"9\":[],\"10\":[\"all\"],\"11\":[\"all\"],\"12\":[\"all\"],\"13\":[\"R1\",\"R4\"],\"14\":[\"all\"],\"15\":[],\"16\":[\"all\"],\"17\":[],\"18\":[],\"19\":[],\"20\":[],\"21\":[],\"22\":[\"all\"],\"23\":[\"all\"],\"24\":[],\"25\":[],\"26\":[],\"27\":[],\"28\":[],\"29\":[],\"30\":[],\"31\":[],\"32\":[],\"33\":[],\"34\":[],\"35\":[],\"36\":[],\"37\":[],\"38\":[],\"39\":[],\"40\":[],\"41\":[],\"42\":[\"R1\",\"R2\",\"R4\"],\"43\":[\"R2\",\"R3\",\"R4\"],\"44\":[\"R1\",\"R3\",\"R4\"],\"45\":[\"R1\",\"R4\"],\"46\":[\"R1\",\"R4\",\"R5\"],\"47\":[\"R1\",\"R4\",\"R5\"],\"48\":[\"R1\",\"R2\",\"R4\"],\"49\":[\"R2\",\"R3\",\"R4\"],\"50\":[],\"51\":[\"R2\",\"R3\",\"R4\"],\"52\":[],\"53\":[\"R2\",\"R4\"],\"54\":[\"all\"],\"55\":[\"R2\",\"R3\"],\"56\":[\"all\"],\"57\":[\"R1\",\"R4\"],\"58\":[],\"59\":[\"all\"],\"60\":[\"R1\",\"R4\",\"R5\"],\"61\":[\"R1\",\"R4\",\"R5\"],\"62\":[],\"63\":[\"all\"],\"64\":[\"all\"],\"65\":[\"all\"],\"66\":[\"all\"],\"67\":[\"all\"],\"68\":[\"R1\",\"R4\",\"R5\"],\"69\":[\"all\"],\"70\":[],\"71\":[],\"72\":[]}}\n```"
+ }
+}

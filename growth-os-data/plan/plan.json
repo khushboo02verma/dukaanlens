@@ -1,0 +1,300 @@
+{
+ "run": "2026-11-18T14-24-01_dukaanlens_launch",
+ "strategy": {
+  "positioning": "DukaanLens is a shelf-photo check for FMCG sales teams selling through Indian kirana stores. The salesman takes one in-app photo and sees which listed products are missing before he leaves, so he can take the order. It is shelf photos only, with no suite to adopt. It runs on existing phones and accepts in-app camera photos only, with time and location. Every page, ad and follow-up must say it is a pilot or demo that is not yet proven: no customers, no accuracy figures, no claimed results. Market statements on the site (gaps found weeks later, wrong labels are common) are ASSUMED and must not appear in ads.",
+  "focusOffer": "Out-of-stock detection",
+  "whyThisOffer": "1) It serves the main buyer named by the registry and home page: sales heads, area sales managers and distributor managers. 2) Research found nobody targeting the narrow 'out-of-stock found before the salesman leaves' phrases (ASSUMED from a small number of searches). 3) The closest rival on this use case, Vision Group, can be compared on measured results later. 4) Its buy-intent phrases ('shelf audit app for FMCG sales team', 'retail execution software India') are less likely to draw students than 'share of shelf calculation' or 'what is planogram'. 5) Price-label check rests on a past trigger (GST 2.0, Sep 2025) whose live effect is unknown. Volumes for every phrase are unknown (ASSUMED), so this choice is a judgement to be confirmed by Keyword Planner before spend.",
+  "blockersBeforeSpend": [
+   "TRACKING: GTM is not in the served HTML. GA4 G-Q7QZZ1J18C is present. Install GTM on every page, fire exactly one conversion, `generate_lead`, only on a successful buyer-form submit, and import it as the only primary conversion in Google Ads. Check it with a test submit before launch.",
+   "CONSENT: no consent banner or consent mode (MEASURED: 'consent no'). Add consent mode v2 with defaults, and a privacy policy that lists GA4, GTM and the Google Ads tag.",
+   "ATTRIBUTION: the form must carry gclid, utm_source/medium/campaign/term, landing page and referrer into the lead record. The lead endpoint must require a server-side secret and have a honeypot field.",
+   "HONESTY CONFLICT (MEASURED factConflicts): the home and solution pages say 'Book a demo' as if the service is live, while the About page says DukaanLens is not a real business. Before paid traffic, change the CTA to an honest pilot action ('Join the pilot list – tell us your shelf problem') and put a visible 'demo/pilot venture, capability not yet proven' line above the fold. Paid clicks must not be sent to a page that implies a live product.",
+   "QUALIFIER: add required form fields for company type (FMCG brand / distributor / retailer / agency-consultant / student / other), field sales team size (none / 1–20 / 21–100 / 100+) and role. Only an FMCG brand or distributor with a field sales team counts as qualified. Others still see a success message but are not counted as qualified.",
+   "KEYWORD VOLUME: no Keyword Planner data exists (ASSUMED volumes). Pull IN volumes and CPCs for the out-of-stock and retail-execution phrases. If the total exact- and phrase-match volume for the chosen list is under about 100 searches a month, do not launch. Report back instead.",
+   "AD LANDING PAGE: build one message-matched page for 'shelf audit app for FMCG sales team / out of stock detection'. Title of 60 characters or fewer, phrase first. Answer paragraph, form above the fold, and the 3 approved proof items only.",
+   "APPROVAL: 56 days × Rs 950 = Rs 53,200 including 18% GST (Rs 45,085 ex-GST). This needs human approval, stating the expected result and the assumptions below."
+  ],
+  "campaigns": [
+   {
+    "name": "DL-IN-Search-OOS-ShelfAudit-Test",
+    "offer": "Out-of-stock detection",
+    "country": "IN",
+    "landingPage": "https://khushboo02verma.github.io/dukaanlens/solutions/out-of-stock-detection.html (replace with the new message-matched ad landing page once it is built)",
+    "dailyBudget": 950,
+    "why": "This is the only campaign. Rs 950/day including 18% GST, which is Rs 805/day ex-GST in the account. At the Rs 15,000 target that is about 1 qualified lead per 16 days, so splitting the budget would leave every campaign without a decision. Guards: Search network only (no Search partners, no Display). Location set to people IN India. Ad schedule set to Mon–Sat 09:00–19:00 IST in the account time zone. Exact and phrase match only, on buy-intent phrases: 'shelf audit app', 'retail execution software', 'out of stock detection', 'image recognition retail shelf FMCG'. Conversion is generate_lead only. Bidding is Maximize Conversions with no target until there are 15 or more conversions, with a manual max-CPC cap set from Keyword Planner CPCs rather than Maximize Clicks. Base negative list from research: free, jobs, salary, internship, course, pdf, ppt, project, what is, meaning, template, excel, shop owner, kirana store owner, billing software, POS, inventory app for shop, freelance, consultant, agency, reseller, white label, github, open source, and competitor names (Trax, ParallelDots, ShelfWatch, Bizom, FieldAssist, Infilect, Vision Group). Ads make no performance, customer or accuracy claims and carry pilot wording."
+   }
+  ],
+  "testDesign": {
+   "windowDays": 56,
+   "expectedLeads": 3,
+   "decisionRule": "ASSUMED expected result: 0–4 qualified leads in 56 days (Rs 53,200 including GST ÷ Rs 15,000 is about 3.5 at target). This is a demo venture, so the true figure may be 0. 15 leads cannot be reached, so the decision uses leading signals at days 14, 28 and 56. STOP at day 14 if impressions are under 300 or the search-terms report shows less than 50% buyer-intent terms after negatives are added. STOP at day 28 if there are more than 150 clicks and 0 form starts, or if more than 60% of submitted leads fail the qualifier. CONTINUE to day 56 if CTR is 3% or higher on exact/phrase, landing-to-lead rate is 2% or higher, and at least 1 qualified lead has arrived. At day 56: if cost per qualified lead is Rs 15,000 or less, or there are at least 2 qualified leads with a qualified share of 50% or more, keep the campaign and request a longer window. Otherwise stop paid search and move effort to the AEO and listicle tests. Every lead is a TEST result, not evidence of demand.",
+   "leadingSignals": [
+    "Impressions per keyword and impression share (is there any volume at all?)",
+    "Share of search terms that are buyer-intent vs student, job or shop-owner terms",
+    "CTR on exact/phrase ad groups",
+    "Landing-page engaged-session rate and form-start rate (GA4)",
+    "Lead-to-qualified ratio from the company-type and field-team qualifier",
+    "Average CPC vs the Keyword Planner estimate"
+   ]
+  },
+  "websiteFixes": [
+   {
+    "fix": "Install GTM in the served HTML and fire a single `generate_lead` event on buyer-form success only. Pilot-list, newsletter or other forms fire different events.",
+    "playbookRule": "§2.6 Measure from the first visit; §6 Separate buyer forms from non-buyer forms",
+    "expectedEffect": "Makes qualified leads countable at all. Without it the test cannot reach any decision."
+   },
+   {
+    "fix": "Add consent mode v2 and a privacy policy listing every tracker.",
+    "playbookRule": "§3 Legal pages: privacy policy describing every tracker",
+    "expectedEffect": "Legal and measurement hygiene. Lets conversions be modelled correctly."
+   },
+   {
+    "fix": "Resolve the 'Book a demo' vs 'not a real business' conflict. Use one honest CTA ('Join the pilot list') and put a pilot/demo label above the fold on every page.",
+    "playbookRule": "§2.5 Claim only what ships; §1 identical brand facts everywhere",
+    "expectedEffect": "Fewer leads who would feel misled. Raises trust in the leads that do convert, which affects qualified-lead quality more than volume."
+   },
+   {
+    "fix": "Add qualifier fields (company type, field-team size, role), a honeypot and hidden attribution fields (gclid, UTMs, landing page, referrer).",
+    "playbookRule": "§6 one qualifying question; honeypot MUST; attribution MUST",
+    "expectedEffect": "Filters shop owners, students, agencies and vendors out of the qualified count, so cost per qualified lead is measured truthfully."
+   },
+   {
+    "fix": "Build a message-matched ad landing page for the out-of-stock phrase: title of 60 characters or fewer, buyer-words H1, 40–60 word answer, 3 approved proof items, form above the fold, mobile sticky CTA, and a 'who this is not for' line.",
+    "playbookRule": "§3 One landing page per paid-search intent; §4 landing-page anatomy",
+    "expectedEffect": "ASSUMED: a higher landing-to-lead rate than the generic solution page. Measured in the test."
+   },
+   {
+    "fix": "Remove the unsourced market claims from page copy, or label them as hypotheses ('gaps found weeks later', 'labels commonly wrong', 'rivals gain space').",
+    "playbookRule": "§2.4 Never invent a number or claim; §5 claims registry",
+    "expectedEffect": "Keeps ads and pages compliant and honest. No direct effect on lead volume."
+   },
+   {
+    "fix": "Add llms.txt and an entity paragraph ('DukaanLens is a pilot shelf-photo check for FMCG sales teams selling through kirana stores…') on the home and solution pages. Fix the 7 medium site issues from the audit.",
+    "playbookRule": "§2.8 Readable by machines; §4 entity paragraph",
+    "expectedEffect": "AI assistants and Google can describe DukaanLens accurately, including its pilot status."
+   }
+  ],
+  "aeoActions": [
+   {
+    "action": "Publish a kirana-specific guide: 'How to stop salesmen staging shelves in retail audits'. It covers in-app camera only, time and location stamps, surprise re-checks and perfect-shelf/falling-sales flags, with a named method. It is labelled as DukaanLens's pilot design, not a proven result.",
+    "target": "AI search Q5 'How can I stop salesmen from staging shelves in retail audits?' (MEASURED: no vendor named in the answer)",
+    "expectedEffect": "Named in Q5 on the re-run. This is the most open lane found."
+   },
+   {
+    "action": "Publish 'How to measure share of shelf in kirana stores from phone photos', with a worked example labelled as sample data and an FAQ of 60 words or fewer per answer.",
+    "target": "AI search Q2 (MEASURED: answers were generic and noted the kirana gap)",
+    "expectedEffect": "Named in Q2 on the re-run."
+   },
+   {
+    "action": "Request listings on G2, SaaSHub, AlternativeTo and PeerSpot, clearly marked as a demo/pilot with no reviews or accuracy claims.",
+    "target": "AI search Q6 'alternatives to Trax' (MEASURED: these sites were quoted)",
+    "expectedEffect": "Gives AI assistants a third-party source to cite. No customer claims are possible."
+   },
+   {
+    "action": "Allow AI crawlers (already none blocked, MEASURED) and add llms.txt listing the solution pages and guides.",
+    "target": "All 6 tracked questions",
+    "expectedEffect": "Pages can be read and quoted. This is a diagnostic precondition."
+   }
+  ],
+  "experiments": [
+   {
+    "id": "EXP-01-paid-search-OOS",
+    "hypothesis": "FMCG sales heads and area sales managers in India search buy-intent shelf-audit and retail-execution phrases often enough that one exact/phrase Search campaign at Rs 950/day including GST produces qualified pilot-list leads at or below Rs 15,000 each.",
+    "metric": "Qualified leads, meaning generate_lead with qualifier = FMCG brand or distributor with a field sales team.",
+    "expected": "ASSUMED 0–4 qualified leads in 56 days, at most Rs 53,200 including GST. Leading-signal thresholds are in testDesign. Effect on qualified leads: it either establishes the first paid baseline, or shows there is no paid volume, which is still a logged result.",
+    "readoutDate": "2027-01-26"
+   },
+   {
+    "id": "EXP-02-AEO-kirana-pages",
+    "hypothesis": "Publishing the anti-staging and kirana share-of-shelf guides, adding llms.txt and getting directory listings will get DukaanLens named in AI answers.",
+    "metric": "namedInXofN on the same 6 questions",
+    "expected": "From 0/6 (MEASURED) to 2/6 or more. Effect on qualified leads is unknown and tracked through referrer and a 'how did you hear' field.",
+    "readoutDate": "2026-12-30"
+   },
+   {
+    "id": "EXP-03-listicle-inclusion",
+    "hypothesis": "Requesting inclusion in 2–3 ranking listicles (getextractify, gitnux, simplydepo), with honest pilot labelling, brings referred qualified leads.",
+    "metric": "Qualified leads whose first touch is a listicle or comparison referrer",
+    "expected": "ASSUMED 1–3 in 8 weeks. No spend.",
+    "readoutDate": "2027-01-13"
+   },
+   {
+    "id": "EXP-04-qualifier-filter",
+    "hypothesis": "A required company-type and field-team qualifier keeps non-fit leads (shop owners, students, agencies, vendors) out of the qualified count without lowering form completion by more than 20%.",
+    "metric": "Share of submissions qualified, and form completion rate (form submits ÷ form starts)",
+    "expected": "ASSUMED qualified share of 50% or more of submissions. Completion falls by no more than 20% against the first-week baseline.",
+    "readoutDate": "2027-01-26"
+   }
+  ],
+  "risks": [
+   "Search volume for these niche B2B phrases may be near zero (ASSUMED, no Keyword Planner data). The campaign may not spend or learn anything. The Keyword Planner gate and the day-14 stop rule cover this.",
+   "DukaanLens is a demo with no product. Collecting leads from real sales heads creates an obligation to disclose this clearly on the page and in follow-up. Leads are test signals, not demand evidence (MEASURED: adsTestOnly=true).",
+   "There is no deal size, so the Rs 15,000 target per qualified lead cannot be checked for viability (ASSUMED).",
+   "The budget supports about 3.5 qualified leads in 56 days at target. Any decision rests on leading signals and is statistically weak.",
+   "Well-funded rivals already run Google Ads (MEASURED tags: ParallelDots, FieldAssist, Infilect, Vision Group). CPCs on 'retail execution' and 'image recognition' terms may be high.",
+   "Research phrases such as 'MRP compliance' and 'share of shelf calculation' attract compliance officers, consumers and students. They are excluded from launch and covered by negatives.",
+   "Current measured demand is negligible: 4 GA4 sessions, 1 key event, 0 Search Console impressions (MEASURED). There is no organic baseline to compare against.",
+   "One AI engine was run once (Claude with web search). AEO results may differ on ChatGPT or Perplexity and between runs."
+  ],
+  "evidence": [
+   "MEASURED: site and About page state DukaanLens is a demo venture with no customers or sales; registry adsTestOnly=true.",
+   "MEASURED: tracking audit: GTM not in HTML, GA4 G-Q7QZZ1J18C present, no consent.",
+   "MEASURED: launch readiness 77/100 for paid traffic, 7 medium and 2 low issues, llms.txt missing.",
+   "MEASURED: GA4 4 sessions / 1 key event (Organic Social to contact page); Search Console 0 impressions.",
+   "MEASURED: AI search named DukaanLens in 0 of 6 answers; Q5 (anti-staging) named no vendor; Q2 noted the lack of kirana-specific content.",
+   "MEASURED: Google Ads tags on ParallelDots (AW-16532713064), FieldAssist (AW-22504412), Infilect (AW-934140229), Vision Group (AW-10892588313).",
+   "ESTIMATED: quick commerce takes 25–30% of metro kirana business and FMCG majors are adding trade incentives (Business Standard, Outlook Business; third-party, unverified).",
+   "ASSUMED: all keyword volumes are unknown (no Keyword Planner access); buyer/research/job intent split is judged from the wording.",
+   "ASSUMED: Rs 950/day including 18% GST is Rs 805/day ex-GST; 56 days is Rs 53,200 including GST; at Rs 15,000 per qualified lead that is about 3.5 leads.",
+   "ASSUMED: the site's market claims are hypotheses, not facts, and are excluded from ads.",
+   "COST: this strategy run used no tool calls and no spend. Token cost was not itemised. Any campaign spend needs approval."
+  ]
+ },
+ "build": {
+  "campaigns": [
+   {
+    "name": "DL-IN-Search-OOS-ShelfAudit-Test",
+    "country": "IN",
+    "dailyBudget": 950,
+    "adGroups": [
+     {
+      "name": "AG1-Out-of-stock-detection",
+      "landingPage": "https://khushboo02verma.github.io/dukaanlens/solutions/out-of-stock-detection.html",
+      "landingNote": "Existing out-of-stock page. Its H1 must read 'Out of stock detection' before launch. I could not see the current H1, so confirm it. Replace with the new message-matched ad landing page once built.",
+      "keywords": [
+       {
+        "text": "out of stock detection",
+        "match": "exact"
+       },
+       {
+        "text": "out of stock detection",
+        "match": "phrase"
+       }
+      ],
+      "headlines": [
+       "Out of Stock Detection",
+       "Find Missing Products Fast",
+       "Shelf Photo Check for FMCG",
+       "One Photo, See What's Missing",
+       "Spot Gaps Before You Leave",
+       "Built for FMCG Sales Teams",
+       "Works on Existing Phones",
+       "In-App Camera Photos Only",
+       "Pilot Demo - Not Yet Proven",
+       "Join the Pilot List",
+       "Kirana Shelf Check App",
+       "Time and Location Stamped",
+       "No Suite to Adopt"
+      ],
+      "descriptions": [
+       "Take one in-app photo of a kirana shelf and see which listed products are missing.",
+       "Shelf photos only. Runs on existing phones. A pilot demo, not yet proven.",
+       "Know what is missing before you leave the store, so you can take the order.",
+       "Join the pilot list and tell us your shelf problem. Demo venture, no customers yet."
+      ]
+     },
+     {
+      "name": "AG2-Shelf-audit-app-FMCG-sales-team",
+      "landingPage": "https://khushboo02verma.github.io/dukaanlens/solutions/out-of-stock-detection.html",
+      "landingNote": "Same existing page for now. The H1 on the new ad landing page must read 'Shelf audit app for FMCG sales team'. Until then the H1 match for this group is partial.",
+      "keywords": [
+       {
+        "text": "shelf audit app for FMCG sales team",
+        "match": "exact"
+       },
+       {
+        "text": "shelf audit app for FMCG sales team",
+        "match": "phrase"
+       },
+       {
+        "text": "shelf audit app",
+        "match": "phrase"
+       },
+       {
+        "text": "retail audit app for field sales",
+        "match": "exact"
+       },
+       {
+        "text": "retail audit app for field sales",
+        "match": "phrase"
+       }
+      ],
+      "headlines": [
+       "Shelf Audit App for FMCG",
+       "Shelf Audit for Sales Teams",
+       "Retail Audit App Field Sales",
+       "Shelf Check by Photo",
+       "Pilot Shelf-Photo Check",
+       "See Missing SKUs In-Store",
+       "Built for Kirana Shelves",
+       "One Photo Per Shelf",
+       "Runs on Existing Phones",
+       "Pilot Demo - Not Yet Proven",
+       "Join the Pilot List",
+       "Shelf Photos Only, No Suite",
+       "Photos Stamped Time & Place"
+      ],
+      "descriptions": [
+       "A pilot shelf-photo check for FMCG sales teams selling through kirana stores.",
+       "The salesman takes one in-app photo and sees which listed products are missing.",
+       "Existing phones, in-app camera photos only, with time and location. Not yet proven.",
+       "Demo venture with no customers yet. Join the pilot list and tell us your shelf problem."
+      ]
+     }
+    ]
+   }
+  ],
+  "negatives": [
+   "free",
+   "jobs",
+   "job",
+   "salary",
+   "internship",
+   "course",
+   "pdf",
+   "ppt",
+   "project",
+   "what is",
+   "meaning",
+   "template",
+   "excel",
+   "shop owner",
+   "kirana store owner",
+   "billing software",
+   "POS",
+   "inventory app for shop",
+   "freelance",
+   "consultant",
+   "agency",
+   "reseller",
+   "white label",
+   "github",
+   "open source",
+   "student",
+   "students",
+   "tutorial",
+   "diy",
+   "how to make",
+   "vacancy",
+   "career",
+   "careers",
+   "merchandiser jobs",
+   "hardware",
+   "camera hardware",
+   "sensor",
+   "smart shelf",
+   "robot",
+   "drone",
+   "share of shelf calculation",
+   "what is planogram",
+   "mrp compliance",
+   "trax",
+   "paralleldots",
+   "shelfwatch",
+   "bizom",
+   "fieldassist",
+   "infilect",
+   "vision group"
+  ]
+ }
+}

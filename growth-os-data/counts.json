@@ -1,0 +1,24 @@
+{
+ "venture": "dukaanlens",
+ "exportedAt": "2026-11-18T14:33:04.029Z",
+ "tables": {
+  "crm_rows": 3,
+  "events": 273,
+  "intel_events": 1068,
+  "intel_jobs": 3,
+  "intel_model_history": 2,
+  "intel_pages": 108,
+  "intel_queries": 357,
+  "intel_serp": 929,
+  "intel_serp_history": 117,
+  "intel_sim_runs": 20,
+  "intel_sim_steps": 13608,
+  "intel_threads": 39,
+  "latest": 19,
+  "live_snapshots": 6,
+  "llm_usage": 26,
+  "log": 8,
+  "records": 43
+ },
+ "planRun": "2026-11-18T14-24-01_dukaanlens_launch"
+}
