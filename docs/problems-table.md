@@ -49,7 +49,7 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
 
 ## Totals
-✅ fixed: 15 · 🟡 worked around: 4 · 👤 owner or Google step: 4 · ❌ open: 12
+✅ fixed: 13 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 11 (31 in all)
 
 **For tomorrow, in order:** 9 (failed changes come back), 24 (keep the owner's to-do list), 25 (independent changes),
 18 (lock a test company to test accounts by rule), 12 (try a pull request), 30 (stay signed in), then the small ones.
