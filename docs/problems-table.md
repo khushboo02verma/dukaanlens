@@ -41,14 +41,14 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 23 | After removing a chip, the profile form's inputs lose their names | Same (data is kept) | ❌ |
 | 24 | Running setup again erases the first run's instructions (the script to paste) | A to-do list ("Only you can do these") is kept across runs until each item is really done; the sheet step checks the real state | ✅ 8225966 |
 | 25 | A blocked change (waiting for the sheet) holds up the next one (GA4 tag) | A change records what it waits for; the next ready change runs, the waiting one runs once it is given; home shows "Waiting for you" | ✅ a7e0b49 |
-| 26 | The sheet needs an Apps Script deployed by hand, with Google's "unsafe app" warning | Done by the owner in ~3 minutes | 👤 idea: Growth OS receives the form itself |
+| 26 | The sheet needs an Apps Script deployed by hand, with Google's "unsafe app" warning | On a public Growth OS (the deployed server), Growth OS receives the website form itself and writes the sheet with the owner's Google sign-in: no script, no deploy, no warning. Tried: a test enquiry landed in this sheet. On localhost the Apps Script way stays | ✅ 62d46b3 (public server) |
 | 27 | Google won't let software create a Tag Manager account | GA4 tag goes on the site directly | 👤 / 🟡 |
 | 28 | A Google Ads test manager needs a special link and a reCAPTCHA | Done by the owner in ~2 minutes; Growth OS then made the test Ads account | 👤 |
 | 29 | Google does not link GA4 to Ads test accounts | Leads counted from the sheet and GA4 | 👤 Google's rule |
 | 30 | The Growth OS sign-in expires when the server restarts | Not a Growth OS fault: tested on a server restart, with the page open, and after closing the pane, and the sign-in stays (database sessions, 30-day cookie). The sign-ins asked for came from the Claude app's browser pane starting empty in a new session; Growth OS in your own Chrome stays signed in. A test now guards it | ✅ 19 Nov (test) |
-| 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
+| 31 | The thank-you message waits for the sheet (several seconds) | With Growth OS receiving the form, the answer comes at once and the sheet is written after; an enquiry Google does not take is kept and written again | ✅ 62d46b3 (public server) |
 
 ## Totals
-✅ fixed: 19 · 🟡 worked around: 2 · 👤 owner or Google step: 4 · ❌ open: 6 (31 in all)
+✅ fixed: 21 · 🟡 worked around: 2 · 👤 owner or Google step: 3 · ❌ open: 5 (31 in all)
 
 **Next, in order:** 12 (try a pull request), then the small ones. Also built on 19 Nov: Search Console verified through the Analytics tag already on the site (G1, no second tag to paste).
