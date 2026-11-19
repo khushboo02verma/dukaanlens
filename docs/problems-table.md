@@ -29,8 +29,8 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 15 | **Setup tried to create DukaanLens's GA4 inside PredCo's Analytics account** | Accounts used by another company are skipped; a refused one is passed over | ✅ c31db55 |
 | 16 | GA4 matched by host only, so it would reuse an older test property | Matched by the site with its folder: DukaanLens got its own property | ✅ 325ef6e |
 | 17 | Search Console used the host's root property (other sites' searches mixed in) | Its own property for the folder, verified at once | ✅ d7677a1 |
-| 18 | The sign-in sees PredCo's live Ads account; setup could pick it | DukaanLens is locked to test Ads accounts (a flag set by hand) | 🟡 needs a rule, not a hand-set flag |
-| 19 | Ads settings say "Explorer" access; Google says test accounts only | Same | ❌ |
+| 18 | The sign-in sees PredCo's live Ads account; setup could pick it | "This is a test company" in the profile, ticked on its own when the site says it is a test company; then only test Ads accounts are used | ✅ 1cc0f6e |
+| 19 | Ads settings say "Explorer" access; Google says test accounts only | Setup reads Google's answer: test-only access means test accounts only, and the setting is corrected to "test" | ✅ 1cc0f6e |
 | 20 | Google results for a new company come through Bing (the Serper key is saved per company) | Same; works, but a different source than PredCo's | ❌ |
 
 ## Setup screens and owner steps
@@ -49,6 +49,6 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
 
 ## Totals
-✅ fixed: 16 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 8 (31 in all)
+✅ fixed: 18 · 🟡 worked around: 2 · 👤 owner or Google step: 4 · ❌ open: 7 (31 in all)
 
-**Next, in order:** 18 (lock a test company to test accounts by rule), 12 (try a pull request), 30 (stay signed in), then the small ones.
+**Next, in order:** 12 (try a pull request), 30 (stay signed in), then the small ones.
