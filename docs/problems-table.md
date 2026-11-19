@@ -16,7 +16,7 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 6 | The design check ran only on Next.js sites | Runs on HTML sites | ✅ 9f56a4b |
 | 7 | **A change wiped by the site's build still went up for approval** (GA4 tag on 0 of 16 pages) | The editor changes the template; a change the build undoes stops before approval | ✅ bb7365e |
 | 8 | Approved changes failed to push ("unstaged changes") | The build's pages are committed with the change | ✅ 62706b7 |
-| 9 | A declined or failed change is marked "done" and never tried again | Same | ❌ |
+| 9 | A declined or failed change is marked "done" and never tried again | Shown as "Declined" or "Not done" with the reason and a "Try again" button that puts it back in the queue | ✅ 3a01d6e |
 | 10 | The live check looks only at page HTML, so a script change shows "not live yet" for a minute | Same | ❌ |
 | 11 | The build added an unrelated `package-lock.json` to a change | Same | ❌ |
 | 12 | Pull requests (review-branch mode) not tried on a new company | Switched on for DukaanLens; not yet tried with a change | ❌ to test |
@@ -49,7 +49,7 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
 
 ## Totals
-✅ fixed: 13 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 11 (31 in all)
+✅ fixed: 14 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 10 (31 in all)
 
-**For tomorrow, in order:** 9 (failed changes come back), 24 (keep the owner's to-do list), 25 (independent changes),
+**Next, in order:** 24 (keep the owner's to-do list), 25 (independent changes),
 18 (lock a test company to test accounts by rule), 12 (try a pull request), 30 (stay signed in), then the small ones.
