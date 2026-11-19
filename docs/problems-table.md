@@ -45,10 +45,10 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 27 | Google won't let software create a Tag Manager account | GA4 tag goes on the site directly | 👤 / 🟡 |
 | 28 | A Google Ads test manager needs a special link and a reCAPTCHA | Done by the owner in ~2 minutes; Growth OS then made the test Ads account | 👤 |
 | 29 | Google does not link GA4 to Ads test accounts | Leads counted from the sheet and GA4 | 👤 Google's rule |
-| 30 | The Growth OS sign-in expires when the server restarts | Same | ❌ |
+| 30 | The Growth OS sign-in expires when the server restarts | Not a Growth OS fault: tested on a server restart, with the page open, and after closing the pane, and the sign-in stays (database sessions, 30-day cookie). The sign-ins asked for came from the Claude app's browser pane starting empty in a new session; Growth OS in your own Chrome stays signed in. A test now guards it | ✅ 19 Nov (test) |
 | 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
 
 ## Totals
-✅ fixed: 18 · 🟡 worked around: 2 · 👤 owner or Google step: 4 · ❌ open: 7 (31 in all)
+✅ fixed: 19 · 🟡 worked around: 2 · 👤 owner or Google step: 4 · ❌ open: 6 (31 in all)
 
-**Next, in order:** 12 (try a pull request), 30 (stay signed in), then the small ones.
+**Next, in order:** 12 (try a pull request), then the small ones. Also built on 19 Nov: Search Console verified through the Analytics tag already on the site (G1, no second tag to paste).
