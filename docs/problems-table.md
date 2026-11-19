@@ -39,7 +39,7 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 21 | The AI profile listed competitors from memory, one by mistake | Corrected by hand | 🟡 |
 | 22 | The AI wrote "every enquiry is a test" into Not a fit (every lead would score as not a fit) | Corrected by hand | 🟡 |
 | 23 | After removing a chip, the profile form's inputs lose their names | Same (data is kept) | ❌ |
-| 24 | Running setup again erases the first run's instructions (the script to paste) | Same | ❌ |
+| 24 | Running setup again erases the first run's instructions (the script to paste) | A to-do list ("Only you can do these") is kept across runs until each item is really done; the sheet step checks the real state | ✅ 8225966 |
 | 25 | A blocked change (waiting for the sheet) holds up the next one (GA4 tag) | Same | ❌ |
 | 26 | The sheet needs an Apps Script deployed by hand, with Google's "unsafe app" warning | Done by the owner in ~3 minutes | 👤 idea: Growth OS receives the form itself |
 | 27 | Google won't let software create a Tag Manager account | GA4 tag goes on the site directly | 👤 / 🟡 |
@@ -49,7 +49,7 @@ Found while setting up DukaanLens in Growth OS on 17–18 Nov 2026. Growth OS fi
 | 31 | The thank-you message waits for the sheet (several seconds) | Same | ❌ |
 
 ## Totals
-✅ fixed: 14 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 10 (31 in all)
+✅ fixed: 15 · 🟡 worked around: 3 · 👤 owner or Google step: 4 · ❌ open: 9 (31 in all)
 
-**Next, in order:** 24 (keep the owner's to-do list), 25 (independent changes),
+**Next, in order:** 25 (independent changes),
 18 (lock a test company to test accounts by rule), 12 (try a pull request), 30 (stay signed in), then the small ones.
